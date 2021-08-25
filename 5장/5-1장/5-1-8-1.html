@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+       // 나머지 매개변수를 활용한 최솟값 구하는 함수
+       function min(...items) {
+           let output = items[0]
+           for (const item of items) {
+               if (output > item) {
+                   output = item
+               }
+           }
+
+           return output
+       }
+
+       alert('(52, 273, 32, 103, 275, 24, 57) 중 최솟값은')
+       alert(`${min(52, 273, 32, 103, 275, 24, 57)}`)
+    </script>
+</body>
+</html>
