@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // 전개 연산자가 없던 구 버전에서 apply() 함수 사용하기
+      function sample(...items) {
+        console.log(items);
+      }
+
+      const array = [1, 2, 3, 4];
+      console.log(sample.apply(null, array));
+    </script>
+  </body>
+</html>
