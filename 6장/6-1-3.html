@@ -5,11 +5,13 @@
   </head>
   <body>
     <script>
-      // 동적으로 객체 속성 추가하기
+      // 동적으로 객체 속성 제거하기
       const student = {}
       student.이름 = '이영한'
       student.취미 = '게임'
       student.장래희망 = '프론트엔드 개발자'
+
+      delete student.취미
 
       console.log(JSON.stringify(student, null, 2))
     </script>
