@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // JSON.stringify() 메소드
+      const data = [{
+          name: '책',
+          price: 18000,
+          publisher: '이영한'
+      }, {
+          name: '영어책',
+          price: 26000,
+          publisher: '강동원'
+      }]
+
+      console.log(JSON.stringify(data))
+      console.log(JSON.stringify(data, null, 2))
+    </script>
+  </body>
+</html>
