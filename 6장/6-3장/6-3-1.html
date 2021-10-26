@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // 속성 존재 여부 확인하기
+
+      // object 객체를 생성
+      const object = {
+          name: '혼자 공부하는 파이썬',
+          price: 18000,
+          publisher: '한빛미디어'
+      }
+
+      /* 기본 문법
+      if (object.name !== undefined) {
+          console.log('name 속성이 있음')
+      } else {
+          console.log('name 속성이 없음')
+      }
+
+      if (object.author !== undefined) {
+          console.log('author 속성이 있음')
+      } else {
+          console.log('author 속성이 없음')
+      }
+      */
+
+      /* 조금 더 간단하게
+      if (object.name) {
+          console.log('name 속성이 있음')
+      } else {
+          console.log('name 속성이 없음')
+      }
+
+      if (object.author) {
+          console.log('author 속성이 있음')
+      } else {
+          console.log('author 속성이 없음')
+      }
+      */
+
+      // 객체 내부에 속성이 있는지 간단히 확인
+      object.name || console.log('name 속성 없음')
+      object.author || console.log('author 속성 없음')
+    </script>
+  </body>
+</html>
