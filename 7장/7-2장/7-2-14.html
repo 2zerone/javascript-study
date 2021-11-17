@@ -10,7 +10,7 @@
                 timerId = setInterval(() => {
                     const length = textarea.value.length
                     h1.textContent = `글자 수: ${length}`
-                }, 50)
+                }, 100)
             })
             textarea.addEventListener('blur', (event) => {
                 clearInterval(timerId)
