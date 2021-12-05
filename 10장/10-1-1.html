@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="http://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // 컴포넌트, 컨테이너 생성
+        const component = <h1>리액트 기본</h1> // h1 컴포넌트 생성
+        const container = document.getElementById('root') // h1 컴포넌트를 출력할 div#root를 읽어들임
+
+        // 출력
+        ReactDOM.render(component, container) // 컴포넌트를 div#root에 출력
+    </script>
+</body>
+
+</html>
